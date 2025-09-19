@@ -274,7 +274,6 @@ body {
     padding: 20px;
     background: #fff;
     transition: all 0.3s ease;
-    /* smooth hover */
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -286,9 +285,9 @@ body {
 }
 
 .product-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 100%;
+    height: 200px;
+    border-radius: 5%;
     margin: 20px auto;
     overflow: hidden;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
@@ -311,7 +310,7 @@ body {
 .product-names {
     font-size: 15px;
     font-weight: bold;
-    color: #e41367;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 12px;
@@ -349,7 +348,7 @@ body {
     padding: 10px 18px;
     border: none;
     border-radius: 8px;
-    background: #4f46e5;
+    background: #f59e0b;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
