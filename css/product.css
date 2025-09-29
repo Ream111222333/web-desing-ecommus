@@ -147,14 +147,15 @@ body {
 }
 
 .header1 {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.836);
   border-bottom: 1px solid #e5e7eb;
   padding: 20px 24px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 400px;
+  /* margin: 0 auto; */
 }
 
 .search-container {
@@ -194,7 +195,6 @@ body {
   color: #6b7280;
 }
 
-/* Nav links with icons */
 .nav-links {
   display: flex;
   align-items: center;
@@ -363,7 +363,6 @@ body {
 }
 .callery-section {
     height: 80vh;
-    /* taller hero looks better */
     background: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
         url('/img/3.jpg') no-repeat center center;
@@ -522,6 +521,10 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.text-fooder{
+  align-items: center;
+  text-align: center;
 }
 
 

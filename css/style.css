@@ -36,6 +36,7 @@ body {
 
 .social-link {
     color: #d89521;
+    padding-left: 30px;
 }
 
 .nav-menu {
@@ -104,7 +105,7 @@ body {
 .search-icon {
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: 44px;
     transform: translateY(-50%);
     color: #999999;
     font-size: 16px;
@@ -118,11 +119,13 @@ body {
     border-radius: 60px;
     font-size: 16px;
     transition: border-color 0.3s;
+    /* align-items: center;  */
+    text-align: center;
 }
 
 .search-input:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #939699;
 }
 
 .hero-content {
@@ -179,7 +182,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Mobile Navigation */
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;

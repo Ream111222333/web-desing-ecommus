@@ -1,13 +1,18 @@
-body { font-family: 'Inter', sans-serif; }
-        .gradient-bg {
-       background: linear-gradient(135deg, #ddb423 0%, #0b3994 100%);
-
-   }
-img{
-    background-color: black;
-    width: 80px;
-    width:100px ;
+body {
+  font-family: 'Inter', sans-serif;
 }
+
+.gradient-bg {
+  background: linear-gradient(135deg, #ddb423 0%, #0b3994 100%);
+
+}
+
+img {
+  background-color: black;
+  width: 80px;
+  width: 100px;
+}
+
 .nav {
   display: flex;
   gap: 32px;
@@ -36,23 +41,25 @@ img{
 .nav-link:hover::after {
   width: 100%;
 }
+
 .nav-link:hover {
-            color: #f59e0b;
-        }
+  color: #f59e0b;
+}
 
-        .nav-link.active {
-            color: #f59e0b;
-        }
+.nav-link.active {
+  color: #f59e0b;
+}
 
-        .nav-link.active::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: #f59e0b;
-        }
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #f59e0b;
+}
+
 .Location {
   display: flex;
   justify-content: center;
@@ -60,7 +67,7 @@ img{
   padding: 20px;
   background: #f4f4f4;
   gap: 60px;
-  
+
 }
 
 .mape {
@@ -82,7 +89,7 @@ img{
 
 .text i {
   margin-right: 10px;
-  color: #ffd700; 
+  color: #ffd700;
 }
 
 .mape iframe {
@@ -123,17 +130,18 @@ img{
 .icon.youtube {
   color: #ff0000;
 }
-.textform{
+
+.textform {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
- 
+
 }
-.textform h1{
+
+.textform h1 {
   font-size: 32px;
   font-weight: bold;
   color: #ddb423;
   padding-bottom: 30px;
 }
-

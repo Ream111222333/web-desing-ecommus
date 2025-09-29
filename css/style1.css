@@ -149,12 +149,23 @@ body {
   color: #4a5568;
 }
 
+
 .hero-image {
   width: 100%;
   height: 400px;
   object-fit: cover;
   border-radius: 12px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  display: block;
 }
+
+.hero-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.05);
+}
+
 
 .mission-section {
   margin-top: 80px;
@@ -172,12 +183,22 @@ body {
   height: 400px;
   object-fit: cover;
   border-radius: 12px;
+   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  display: block;
+ 
+}
+.mission-image:hover{
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.05);
 }
 
 .mission-right {
   max-width: 500px;
 }
-.mission-right h2{
+
+.mission-right h2 {
   color: #f59e0b;
 
 }
@@ -205,78 +226,106 @@ body {
 
 .mvv-section {
   display: flex;
+  flex-wrap: wrap;
   gap: 0;
   align-items: stretch;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
 }
 
 .mvv-column {
   flex: 1;
-  padding: 40px 30px;
+  min-width: 280px;
+  padding: 50px 35px;
   text-align: center;
   position: relative;
+  background-color: #fafafa;
+  transition: background-color 0.3s ease;
+}
+
+.mvv-column:hover {
+  background-color: #f0f9fa;
 }
 
 .mvv-column:not(:last-child)::after {
   content: '';
   position: absolute;
   right: 0;
-  top: 20%;
-  bottom: 20%;
+  top: 15%;
+  bottom: 15%;
   width: 1px;
-  background-color: #e0e0e0;
+  background-color: #d0d0d0;
 }
 
 .main-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 30px;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 42px;
   color: #00bcd4;
+  border: 2px solid #00bcd4;
+  border-radius: 50%;
+  background-color: #e0f7fa;
 }
 
 .mvv-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  color: #333;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  margin-bottom: 18px;
+  color: #003b4a;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
-.mission-title {
-  color: #00bcd4;
-}
-
-.vision-title {
-  color: #00bcd4;
-}
-
+.mission-title,
+.vision-title,
 .values-title {
   color: #00bcd4;
 }
 
 .sub-icon {
-  width: 24px;
-  height: 24px;
-  margin: 0 auto 20px;
+  width: 28px;
+  height: 28px;
+  margin: 0 auto 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 20px;
   color: #00bcd4;
 }
 
 .mvv-description {
   font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-  max-width: 280px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 300px;
   margin: 0 auto;
 }
 
-/* Mobile responsive */
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .mvv-section {
+    flex-direction: column;
+  }
+
+  .mvv-column:not(:last-child)::after {
+    display: none;
+  }
+
+  .mvv-column {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .mvv-column:last-child {
+    border-bottom: none;
+  }
+}
+
 @media (max-width: 768px) {
   .mvv-section {
     flex-direction: column;
@@ -299,7 +348,6 @@ body {
   }
 }
 
-/* Icon styles */
 .target-icon::before {
   content: '🎯';
 }
