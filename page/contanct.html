@@ -62,7 +62,7 @@
         <div class="grid md:grid-cols-2 gap-12">
 
             <div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Reach out to us!</h2>
+                <h2 class="text-3xl font-bold text-blue-900 mb-6">Reach out to us!</h2>
                 <p class="text-gray-600 mb-8">
                     Got a question about Lander? Are you interested in partnering with us? Have some suggestions or just
                     want to say hi? Contact us.
@@ -71,42 +71,70 @@
 
                 <section class="bg-white py-12 px-4 sm:px-6 lg:px-8">
                     <div class="max-w-3xl mx-auto shadow-lg rounded-xl p-8 bg-gray-50">
-                        <div class="mb-8 text-center">
-                            <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
-                            <p class="text-gray-600 mt-2">We’d love to hear from you. Fill out the form below and we’ll
-                                get back to you shortly.</p>
-                        </div>
 
-                        <form class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input type="text" placeholder="First Name"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent">
-                                <input type="text" placeholder="Last Name"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                        <header class="mb-8 text-center">
+                            <h2 class="text-3xl font-extrabold text-gray-900">Get in Touch</h2>
+                            <p class="text-gray-600 mt-2 max-w-md mx-auto">We’d love to hear from you. Fill out the form
+                                below and we’ll get back to you shortly.</p>
+                        </header>
+
+                        <form class="space-y-6" novalidate>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <label class="block">
+                                    <span class="text-gray-700 font-semibold mb-1 block">First Name</span>
+                                    <input type="text" name="firstName" placeholder="First Name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent transition"
+                                        required>
+                                </label>
+                                <label class="block">
+                                    <span class="text-gray-700 font-semibold mb-1 block">Last Name</span>
+                                    <input type="text" name="lastName" placeholder="Last Name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent transition"
+                                        required>
+                                </label>
                             </div>
-                            <input type="email" placeholder="Your Email Address"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent">
 
-                            <input type="tel" placeholder="Phone Number"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                            <label class="block">
+                                <span class="text-gray-700 font-semibold mb-1 block">Email Address</span>
+                                <input type="email" name="email" placeholder="Your Email Address"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent transition"
+                                    required>
+                            </label>
 
-                            <textarea placeholder="Message" rows="5"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"></textarea>
+                            <label class="block">
+                                <span class="text-gray-700 font-semibold mb-1 block">Phone Number</span>
+                                <input type="tel" name="phone" placeholder="Phone Number"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent transition">
+                            </label>
+
+                            <label class="block">
+                                <span class="text-gray-700 font-semibold mb-1 block">Message</span>
+                                <textarea name="message" placeholder="Your message here..." rows="5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none transition"
+                                    required></textarea>
+                            </label>
 
                             <div class="text-center">
                                 <button type="submit"
-                                    class="bg-gradient-to-r from-blue-500 to-yellow-500 text-white px-8 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity">
+                                    class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-red-500 text-white px-10 py-3 rounded-lg font-semibold shadow-lg 
+                                            hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300">
                                     SUBMIT
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 10l11-6c1.2-.6 2.5.6 2.2 1.9L14.7 12m0 0l1.5 6.1c.3 1.3-1 2.5-2.2 1.9L3 14m11.7-2H3" />
+                                    </svg>
                                 </button>
                             </div>
                         </form>
                     </div>
                 </section>
 
+
             </div>
 
             <div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Customer Care</h2>
+                <h2 class="text-3xl font-bold text-blue-900 mb-6">Customer Care</h2>
                 <p class="text-gray-600 mb-8">
                     Not sure where to start? Need help adding that extra mojo to your landing page? Just visit our
                     <a href="#" class="text-yellow-500 hover:underline">help center</a> or get in touch with us.
@@ -134,11 +162,13 @@
                     <div class="space-y-4">
                         <div class="flex items-start space-x-4">
                             <div class="w-10 h-10 bg-write-500 rounded-full flex items-center justify-center">
-                                <a href="#" class="social-link" aria-label="Facebook">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <a href="#" class="social-link text-[#1877F2]" aria-label="Facebook">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
                                         <path
                                             d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                                     </svg>
+                                </a>
+
                             </div>
                             <div>
                                 <p class="text-gray-700">
@@ -150,11 +180,16 @@
                         </div>
                         <div class="flex items-start space-x-4">
                             <div class="w-10 h-10 bg-write-500 rounded-full flex items-center justify-center">
-                                <a href="#" class="social-link" aria-label="Instagram">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                                    </svg>
+                                <a href="#" class="social-link group" aria-label="Instagram">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                        </svg>
+                                    </div>
+                                </a>
+
                                 </a>
                             </div>
                             <div>
@@ -168,9 +203,9 @@
                         </div>
                         <div class="flex items-start space-x-4">
                             <div class="w-10 h-10 bg-write-500 rounded-full flex items-center justify-center">
-                                <a href="https://t.me/yourTelegramUsername" class="social-link" aria-label="Telegram"
-                                    target="_blank" rel="noopener">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <a href="https://t.me/yourTelegramUsername" class="social-link text-[#0088cc]"
+                                    aria-label="Telegram" target="_blank" rel="noopener">
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
                                         <path
                                             d="M12 0C5.371 0 0 5.371 0 12c0 6.629 5.371 12 12 12s12-5.371 12-12c0-6.629-5.371-12-12-12zm5.445 7.488l-1.53 7.223c-.115.523-.418.651-.847.406l-2.347-1.733-1.133 1.09c-.125.125-.231.231-.472.231l.17-2.392 4.354-3.936c.189-.17-.041-.264-.293-.094l-5.379 3.387-2.315-.723c-.504-.157-.514-.504.105-.743l9.043-3.49c.418-.157.783.094.652.723z" />
                                     </svg>
@@ -187,12 +222,14 @@
                         </div>
                         <div class="flex items-start space-x-4">
                             <div class="w-10 h-10 bg-write-500 rounded-full flex items-center justify-center">
-                                <a href="tel:+1234567890" class="social-link" aria-label="Call">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <a href="tel:+1234567890" aria-label="Call"
+                                    class="w-8 h-8 flex items-center justify-center rounded-full bg-[#25D366] hover:bg-[#1da851] transition-colors">
+                                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
                                         <path
                                             d="M22 16.92v3a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 3.08 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.12.81.35 1.59.68 2.33a2 2 0 0 1-.45 2.11L9 9a16 16 0 0 0 6 6l.84-.84a2 2 0 0 1 2.11-.45c.74.33 1.52.56 2.33.68a2 2 0 0 1 1.72 2.01z" />
                                     </svg>
                                 </a>
+
 
 
                             </div>
@@ -230,9 +267,12 @@
             </footer>
             <div class="textform">
                 <h1>ABOUT Mape</h1>
-                <p>Most people easy to buy book. In here place that buy book that help people easy to find book than book online because we have a lot of book that 
-                    like type book khmer book and English book. So You can injoy to buy the book in here. We have tik tok, telegram, intargram, facebok and then link In.
-                    if you want to get information more. You can contact in here even easy to know about information more of book.
+                <p>Most people easy to buy book. In here place that buy book that help people easy to find book than
+                    book online because we have a lot of book that
+                    like type book khmer book and English book. So You can injoy to buy the book in here. We have tik
+                    tok, telegram, intargram, facebok and then link In.
+                    if you want to get information more. You can contact in here even easy to know about information
+                    more of book.
                     One again. We live in Tuk tna communi street 371 city Pnom pen.
                 </p>
 
@@ -262,6 +302,7 @@
                         <li><a href="#" class="hover:text-white">Help Costumer</a></li>
                         <li><a href="#" class="hover:text-white">Blog</a></li>
                         <li><a href="#" class="hover:text-white">Connect</a></li>
+                        <li><a href="#" class="hover:text-white">information</a></li>
                     </ul>
                 </div>
                 <div>
@@ -270,6 +311,8 @@
                         <li><a href="#" class="hover:text-white">Why Book</a></li>
                         <li><a href="#" class="hover:text-white">Pricing</a></li>
                         <li><a href="#" class="hover:text-white">Custom Template</a></li>
+                        <li><a href="#" class="hover:text-white">Custom suppot</a></li>
+                        <li><a href="#" class="hover:text-white">Book Home</a></li>
                     </ul>
                 </div>
                 <div>
@@ -277,10 +320,14 @@
                     <p class="text-sm text-gray-300 mb-4">
                         Start a 14 day free trial on any of our paid plans. No credit card required.
                     </p>
-                    <button
-                        class="gradient-bg text-white px-6 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
+                    <button class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+         text-white px-6 py-2 rounded-md text-sm font-semibold
+         shadow-md hover:shadow-xl hover:scale-105 hover:opacity-95
+         transition-transform transition-shadow duration-300 ease-in-out
+         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400">
                         GET STARTED
                     </button>
+
                 </div>
             </div>
 
@@ -288,30 +335,40 @@
                 <div class="flex space-x-4 mb-4 md:mb-0">
                     <span class="text-sm text-gray-400">Stay Tuned!</span>
                     <div class="flex space-x-2">
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                            <a href="#" class="social-link" aria-label="Instagram">
+                        <div class="flex gap-4 items-center">
+
+                            <a href="#" class="social-link text-[#181717]" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+
+
+                            <a href="#" class="social-link text-[#E4405F]" aria-label="Instagram">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                                 </svg>
                             </a>
-                            <a href="#" class="social-link" aria-label="Facebook">
+
+
+                            <a href="#" class="social-link text-[#1877F2]" aria-label="Facebook">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                                 </svg>
                             </a>
-                            <a href="#" class="social-link" aria-label="Google">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
+
+
+                            <a href="#" class="social-link text-[#DB4437]" aria-label="Google">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M21.805 10.023h-9.805v3.952h5.626c-.241 1.398-1.693 4.104-5.626 4.104-3.393 0-6.163-2.806-6.163-6.261s2.77-6.261 6.163-6.261c1.927 0 3.219.82 3.965 1.529l2.701-2.604C16.43 5.01 14.56 4 12 4 6.48 4 2 8.477 2 14c0 5.523 4.48 10 10 10 5.76 0 9.56-4.028 9.56-9.688 0-.652-.07-1.142-.755-1.289z" />
                                 </svg>
                             </a>
+                        </div>
+
 
                     </div>
                 </div>

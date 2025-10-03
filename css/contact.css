@@ -34,7 +34,7 @@ img {
   left: 0;
   height: 2px;
   width: 0%;
-  background-color: #d3d911;
+  background-color:  #f59e0b;
   transition: width 0.3s ease;
 }
 
@@ -83,7 +83,7 @@ img {
 .text {
   font-size: 33px;
   font-weight: bold;
-  color: rgb(212, 171, 19);
+  color: rgb(27, 8, 91);
   margin-bottom: 20px;
 }
 
@@ -142,6 +142,79 @@ img {
 .textform h1 {
   font-size: 32px;
   font-weight: bold;
-  color: #ddb423;
+  color: #090e4c;
   padding-bottom: 30px;
+}
+/* ========== Responsive Styles ========== */
+
+/* Mobile Devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .Location {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .mape {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+
+  .textform h1 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  img {
+    width: 80px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    gap: 24px;
+  }
+
+  .Location {
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .mape {
+    width: 95%;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .social-icons {
+    gap: 40px;
+  }
+
+  .icon {
+    font-size:
+  }
 }
