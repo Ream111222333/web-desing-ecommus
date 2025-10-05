@@ -145,16 +145,25 @@ img {
   color: #090e4c;
   padding-bottom: 30px;
 }
-/* ========== Responsive Styles ========== */
 
-/* Mobile Devices (max-width: 767px) */
 @media (max-width: 767px) {
   .nav {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
     padding: 10px;
+    font-size: 10px;
   }
+  .flex.space-x-4 {
+  display: flex;
+  flex-direction: row; 
+  gap: 20px;
+  width: 80%; 
+}
+
+.w-fulls {
+  font-size: 12px;
+}
+
 
   .Location {
     flex-direction: column;
@@ -189,10 +198,22 @@ img {
   img {
     width: 80px;
   }
+.grid1 {
+  display: grid;
+  padding-left: 30px;
+  gap: 60px;
+  grid-template-columns: auto auto ;
+}
+
+.space-y-2.text-sm {
+  display: grid;
+  
+}
+
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .nav {
     gap: 24px;
   }
@@ -217,4 +238,16 @@ img {
   .icon {
     font-size:
   }
+  .grid1 {
+  display: grid;
+  padding-left: 30px;
+  gap: 60px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.space-y-2.text-sm {
+  display: grid;
+  
+}
+
 }

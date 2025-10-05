@@ -183,12 +183,13 @@ body {
   height: 400px;
   object-fit: cover;
   border-radius: 12px;
-   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   cursor: pointer;
   display: block;
- 
+
 }
-.mission-image:hover{
+
+.mission-image:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
   filter: brightness(1.05);
@@ -411,24 +412,26 @@ body {
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .mission-title {
-    font-size: 28px;
-  }
-
-  .hero-description,
-  .mission-description {
-    font-size: 16px;
+  .header .container {
+    flex-direction: row;
+    gap: 12px;
   }
 
   .nav {
-    gap: 15px;
+    gap: 10px;
+    font-size: 12px;
+   
   }
 
-  .nav-link {
-    font-size: 14px;
+  .cta-button {
+    max-width: 90px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    font-size: 12px;
   }
+
+
+
 }
