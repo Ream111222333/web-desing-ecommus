@@ -37,6 +37,7 @@ body {
 .social-link {
     color: #d89521;
     padding-left: 30px;
+    margin-top: none;
 }
 
 .nav-menu {
